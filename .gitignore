@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+data/raw/
+data/processed/human_lyrics_*
+data/processed/embeddings_*.npy
+outputs/logs/
+.claude/
+.wrangler/
+CLAUDE.md
+WORKLOG.md
+presentation/

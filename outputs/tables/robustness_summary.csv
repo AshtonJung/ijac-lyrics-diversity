@@ -1,0 +1,21 @@
+analysis,estimate,ci_low,ci_high,p_value,n,interpretation
+genre_stratified[country]_semantic_dispersion_genre,-0.10081474317444694,-0.15120842905845608,-0.05042105729043781,8.81849981587594e-05,72,AI-human diff in semantic_dispersion_genre within country
+genre_stratified[electronic/dance]_semantic_dispersion_genre,-0.15688242651950396,-0.18997124812612357,-0.12379360491288435,1.504482074204154e-20,116,AI-human diff in semantic_dispersion_genre within electronic/dance
+genre_stratified[hip-hop/rap]_semantic_dispersion_genre,-0.08557493062246366,-0.1040235665773686,-0.06712629466755872,9.777902454146296e-20,224,AI-human diff in semantic_dispersion_genre within hip-hop/rap
+genre_stratified[pop]_semantic_dispersion_genre,-0.11256471168833453,-0.13237921905454136,-0.09275020432212769,8.531131371124965e-29,307,AI-human diff in semantic_dispersion_genre within pop
+genre_stratified[r&b/soul]_semantic_dispersion_genre,-0.09308074621690673,-0.13026585333539759,-0.055895639098415884,9.289172475956834e-07,66,AI-human diff in semantic_dispersion_genre within r&b/soul
+genre_stratified[rock/alternative]_semantic_dispersion_genre,-0.13347695980753252,-0.17338186631768285,-0.09357205329738219,5.533090873370937e-11,56,AI-human diff in semantic_dispersion_genre within rock/alternative
+song_level_cluster_bootstrap_semantic_dispersion_genre,-0.11013917928680476,-0.12205141516330247,-0.09850222988828992,,841,"AI-human mean diff in semantic_dispersion_genre, 2000x cluster bootstrap resampling matched-prompt clusters (not naive pairwise-distance resampling)"
+length_restricted_semantic_dispersion_genre,-0.10789227016821848,-0.1201403232434265,-0.09564421709301046,8.602021642815173e-67,673,"AI-human diff in semantic_dispersion_genre, word_count restricted to [237, 636] (p10-p90 of the combined sample), cluster-robust SE"
+exclude_qc_flagged_semantic_dispersion_genre,-0.11025040220389126,-0.12197202027165197,-0.09852878413613056,6.895037451330081e-76,839,"AI-human diff in semantic_dispersion_genre excluding 2 QC-flagged AI rows (length/refusal/duplicate/chorus/memorization flags from src/05_quality_control.py), cluster-robust SE"
+genre_stratified[country]_mtld,42.84529670727929,30.407882450458224,55.28271096410035,1.4599740215723927e-11,72,AI-human diff in mtld within country
+genre_stratified[electronic/dance]_mtld,45.73819781374155,39.26499679714607,52.21139883033703,1.2959051592232392e-43,116,AI-human diff in mtld within electronic/dance
+genre_stratified[hip-hop/rap]_mtld,49.28493976752806,42.92230743979613,55.64757209525999,4.662401625222343e-52,224,AI-human diff in mtld within hip-hop/rap
+genre_stratified[pop]_mtld,45.31898856478431,41.39505813559211,49.24291899397652,1.9001718900590927e-113,307,AI-human diff in mtld within pop
+genre_stratified[r&b/soul]_mtld,47.079486475013994,36.32696190008955,57.83201104993844,9.354487090274104e-18,66,AI-human diff in mtld within r&b/soul
+genre_stratified[rock/alternative]_mtld,55.42871976391224,46.75648242881323,64.10095709901125,5.3043955031922515e-36,56,AI-human diff in mtld within rock/alternative
+song_level_cluster_bootstrap_mtld,47.07051716331626,44.007803100494684,50.03675894584397,,841,"AI-human mean diff in mtld, 2000x cluster bootstrap resampling matched-prompt clusters (not naive pairwise-distance resampling)"
+length_restricted_mtld,46.122114401703676,42.81023477105315,49.4339940323542,4.865645181271922e-164,673,"AI-human diff in mtld, word_count restricted to [237, 636] (p10-p90 of the combined sample), cluster-robust SE"
+exclude_qc_flagged_mtld,47.10361141542641,43.9908380183588,50.21638481249401,2.605348921981983e-193,839,"AI-human diff in mtld excluding 2 QC-flagged AI rows (length/refusal/duplicate/chorus/memorization flags from src/05_quality_control.py), cluster-robust SE"
+alternative_lexical_metric_hdd,0.09319778196792576,0.0819717546196252,0.10442380931622632,1.5725954849090922e-59,841,AI-human diff using HD-D instead of MTLD as the lexical-diversity outcome
+chorus_dedup_mtld,48.33680144950336,40.92247234648967,55.751130552517054,2.1831386933504505e-37,330,"AI-human diff in MTLD after collapsing lines repeated >2x (simplified chorus normalization; line-exact, not semantic) -- lexical outcome only, embeddings not recomputed for this variant"

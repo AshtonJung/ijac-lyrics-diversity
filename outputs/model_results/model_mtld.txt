@@ -1,0 +1,36 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                   mtld   R-squared:                       0.540
+Model:                            OLS   Adj. R-squared:                  0.533
+Method:                 Least Squares   F-statistic:                     95.99
+Date:                Sun, 09 Aug 2026   Prob (F-statistic):           1.12e-78
+Time:                        09:47:18   Log-Likelihood:                -3703.7
+No. Observations:                 841   AIC:                             7433.
+Df Residuals:                     828   BIC:                             7495.
+Df Model:                          12                                         
+Covariance Type:              cluster                                         
+===================================================================================================
+                                      coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------
+Intercept                         116.9444     16.519      7.080      0.000      84.569     149.320
+C(genre)[T.electronic/dance]      -17.0959      6.250     -2.735      0.006     -29.346      -4.846
+C(genre)[T.hip-hop/rap]            -1.4506      6.617     -0.219      0.826     -14.420      11.519
+C(genre)[T.pop]                   -12.6041      5.980     -2.108      0.035     -24.324      -0.884
+C(genre)[T.r&b/soul]              -10.9663      6.904     -1.588      0.112     -24.497       2.565
+C(genre)[T.rock/alternative]      -17.4868      7.024     -2.489      0.013     -31.254      -3.719
+AI                                 42.3213      6.782      6.241      0.000      29.030      55.613
+AI:C(genre)[T.electronic/dance]     2.3001      7.310      0.315      0.753     -12.027      16.628
+AI:C(genre)[T.hip-hop/rap]          7.0368      7.768      0.906      0.365      -8.189      22.263
+AI:C(genre)[T.pop]                  1.6738      7.188      0.233      0.816     -12.415      15.762
+AI:C(genre)[T.r&b/soul]             3.4419      9.880      0.348      0.728     -15.923      22.807
+AI:C(genre)[T.rock/alternative]    12.4143      8.529      1.455      0.146      -4.303      29.131
+log_word_count                    -11.8352      2.816     -4.203      0.000     -17.355      -6.316
+==============================================================================
+Omnibus:                       55.380   Durbin-Watson:                   1.815
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               69.256
+Skew:                           0.592   Prob(JB):                     9.15e-16
+Kurtosis:                       3.758   Cond. No.                         162.
+==============================================================================
+
+Notes:
+[1] Standard Errors are robust to cluster correlation (cluster)

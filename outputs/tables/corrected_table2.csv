@@ -1,0 +1,9 @@
+outcome,term,coef,std_err,ci_low,ci_high,p_value,note
+semantic_dispersion_genre,AI (human-genre-weighted average contrast),-0.11160337693813249,0.005917482544739102,-0.12320142960496556,-0.10000532427129942,0.0,CORRECTED headline estimate
+semantic_dispersion_genre,"AI (country, reference genre only -- OLD mislabel)",-0.10168880848891843,0.02228394839343417,-0.1453645447733986,-0.05801307220443826,5.03507528093472e-06,This is what table2_primary_models.csv's raw 'AI' row actually is
+mtld,AI (human-genre-weighted average contrast),46.20428078100031,1.583199888123172,43.10126601995105,49.307295542049566,0.0,CORRECTED headline estimate
+mtld,"AI (country, reference genre only -- OLD mislabel)",42.32131301199313,6.781604532293025,29.0296123713052,55.613013652681055,4.358826632966384e-10,This is what table2_primary_models.csv's raw 'AI' row actually is
+semantic_dispersion_genre,Temperature: C(condition)[T.low],-0.000873104353705,0.0034657740516541,-0.0076658966735006,0.0059196879660905,0.8011014384139747,unchanged from original
+semantic_dispersion_genre,Temperature: C(condition)[T.medium],-0.0037212160785802,0.0032326223118549,-0.0100570393854364,0.002614607228276,0.2496727063387253,unchanged from original
+mtld,Temperature: C(condition)[T.low],-6.384254778594508,1.6325118901845492,-9.583919287689632,-3.184590269499384,9.203123087920988e-05,unchanged from original
+mtld,Temperature: C(condition)[T.medium],-5.1054238281251685,1.646315643344166,-8.332143196264623,-1.878704459985714,0.0019278956670067,unchanged from original
